@@ -1,0 +1,9 @@
+directory:
+  name: template_dir
+  path: ../
+files:
+  - file: sample.txt
+    name: template.txt
+  - file: sample.json
+    name:
+  - file: sample.py
