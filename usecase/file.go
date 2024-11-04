@@ -9,8 +9,8 @@ type FileUsecase struct {
 	fs infrastructure.FileSystem
 }
 
-func NewFileUsecase() *FileUsecase {
-	return &FileUsecase{fs: *infrastructure.NewFileSystem()}
+func NewFileUsecase(fileSystem *infrastructure.FileSystem) *FileUsecase {
+	return &FileUsecase{fs: *fileSystem}
 }
 
 func (fu *FileUsecase) CreateTemplateDirectory(dirPath string, files []config.File) error {
