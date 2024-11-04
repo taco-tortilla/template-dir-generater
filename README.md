@@ -5,7 +5,11 @@ Tool for automatic generation of template directories.
 ## Usage
 
 ```
-./template-generater
+./tg <dirpath>
+
+# example (dirpath can be omitted)
+./tg ../sample-dir
+
 ```
 
 Run the above with the following configuration.
@@ -20,8 +24,7 @@ Run the above with the following configuration.
     └── sample.txt
 ```
 
-Place template files to be copied in `templates`.
-Configure the template directory in `config.yml`.
+Place template files to be copied in `templates`. Configure the template directory in `config.yml`.
 
 ### Config Example
 
@@ -39,4 +42,5 @@ files:
   - file: sample.py
 ```
 
-If `name` is omitted, the output file name will be the same as `file`.
+If `name` is omitted, the output file name will be the same as `file`.<br>
+If `dirpath` is specified as an argument, the argument takes precedence.
